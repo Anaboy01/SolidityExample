@@ -8,25 +8,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
-					}
-				],
-				"name": "addAmount",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "address",
+						"name": "_contractAddr",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "getUserBal",
+				"name": "checkBal",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -38,8 +30,21 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "getVatValue",
+				"name": "getVaT",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -64,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/INum.sol": "INumber"
+			"contracts/INum.sol": "Interaction"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
