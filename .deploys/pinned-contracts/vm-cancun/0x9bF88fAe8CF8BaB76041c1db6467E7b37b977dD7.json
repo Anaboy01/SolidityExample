@@ -1,6 +1,6 @@
 {
   "name": "Number",
-  "address": "0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47",
+  "address": "0x9bF88fAe8CF8BaB76041c1db6467E7b37b977dD7",
   "abi": [
     {
       "inputs": [
@@ -15,7 +15,7 @@
           "type": "address"
         }
       ],
-      "name": "addAmmount",
+      "name": "addAmount",
       "outputs": [
         {
           "internalType": "bool",
@@ -52,7 +52,7 @@
     },
     {
       "inputs": [],
-      "name": "getVatValue",
+      "name": "getValue",
       "outputs": [
         {
           "internalType": "uint256",
@@ -78,5 +78,5 @@
     }
   ],
   "filePath": "Solidity-Example-1/contracts/Num.sol",
-  "pinnedAt": 1727954141321
+  "pinnedAt": 1727956062299
 }

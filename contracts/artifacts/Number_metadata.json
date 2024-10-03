@@ -36,7 +36,7 @@
 						"type": "address"
 					}
 				],
-				"name": "addAmmount",
+				"name": "addAmount",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -68,7 +68,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getVatValue",
+				"name": "getValue",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -108,11 +108,11 @@
 	},
 	"sources": {
 		"contracts/Num.sol": {
-			"keccak256": "0x263ab9ec2217d879dce4173e73c0426c64160d7ba81e4771ff83a9442ffbe181",
+			"keccak256": "0xbb3a0e1f4b6b0208b86a8707ecb1c7ba1ab77f74e35bc3d1817d5d845b0a4699",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3b2d01976d181384141a2c91fff531f6489c649e03c205a39e54303934173eed",
-				"dweb:/ipfs/QmXGb5uAT5Bx9A5L26foX8fFsUVmmMMo5HoytUKkKPq6iH"
+				"bzz-raw://1a8c2bb3ffb1edba4fa031ede4e02c28072ceec83e262e4f35e7b1d669d55500",
+				"dweb:/ipfs/QmTrHxjegR5WxiMvN6wpg2ycoR7eFUZ9YA482XckH4CraJ"
 			]
 		}
 	},

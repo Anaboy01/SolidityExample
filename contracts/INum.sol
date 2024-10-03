@@ -1,35 +1,31 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
+interface INumbs {
+    function getValue() external  view returns (uint256);
 
-interface INumber {
+    function addAmount(uint256 _num, address _addr) external  returns (bool);
 
-     function getVatValue() external view returns (uint256);
+    function getUserBal(address _addr) external  view returns (uint256);
 
-     function addAmount(uint256 _num, address _addr) external   returns (bool);
-
-      function getUserBal(address _addr) external  view returns (uint256);
-    
 }
 
-
 contract Interaction{
-    address numberContractAdress;
+    address numberContractAddr;
 
     constructor(address _contractAddr){
-        numberContractAdress = _contractAddr;
+        numberContractAddr = _contractAddr;
     }
-
 
     function getVaT() public view returns (uint){
-        return INumber(numberContractAdress).getVatValue();
+        return INumbs(numberContractAddr).getValue();
     }
 
-    function fund (uint amount, address _addr) public{
-        INumber(numberContractAdress).addAmount(amount,  _addr);
+    function fund(uint amount, address _addr) public {
+        INumbs(numberContractAddr).addAmount(amount, _addr);
     }
 
     function checkBal(address _addr) public view returns (uint){
-        return INumber(numberContractAdress).getUserBal(_addr);
+        return  INumbs(numberContractAddr).getUserBal(_addr);
     }
 }
