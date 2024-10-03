@@ -11,6 +11,11 @@
 						"internalType": "uint256",
 						"name": "_num",
 						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
 					}
 				],
 				"name": "addAmount",
@@ -25,7 +30,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
 				"name": "getUserBal",
 				"outputs": [
 					{
@@ -79,11 +90,11 @@
 	},
 	"sources": {
 		"contracts/INum.sol": {
-			"keccak256": "0xa15894bd8f2b7b83448ed2cd0ec916c78af9f96136b22b8db57490c61bf6b1ba",
+			"keccak256": "0x642998f2521a0368788520bf5c6ffba7aad8450b753b7580a38342b90ec45255",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c6c2e21ca1a6c6df1de652e26f4064e4a0f916d8a615332caa2cb8b30b088bd9",
-				"dweb:/ipfs/QmNrCveztJetLCWwyRnrPJuNKNSPa9X3C91Kv2Zi5D9nxT"
+				"bzz-raw://9873b3237f4f3668a64d5c29f78ac9b9860897bb26daded51fcc9dfbc4df3d15",
+				"dweb:/ipfs/QmY2RNLN3SefMGcH6DQGSWkQmdBqq2RJsYJwoGWggtY8CG"
 			]
 		}
 	},

@@ -6,9 +6,9 @@ interface INumber {
 
      function getVatValue() external view returns (uint256);
 
-     function addAmount(uint256 _num) external   returns (bool);
+     function addAmount(uint256 _num, address _addr) external   returns (bool);
 
-      function getUserBal() external  view returns (uint256);
+      function getUserBal(address _addr) external  view returns (uint256);
     
 }
 
@@ -23,15 +23,13 @@ contract Interaction{
 
     function getVaT() public view returns (uint){
         return INumber(numberContractAdress).getVatValue();
-
-        
     }
 
-    function fund (uint amount) public{
-        INumber(numberContractAdress).addAmount(amount);
+    function fund (uint amount, address _addr) public{
+        INumber(numberContractAdress).addAmount(amount,  _addr);
     }
 
-    function checkBal() public view returns (uint){
-        return INumber(numberContractAdress).getUserBal();
+    function checkBal(address _addr) public view returns (uint){
+        return INumber(numberContractAdress).getUserBal(_addr);
     }
 }

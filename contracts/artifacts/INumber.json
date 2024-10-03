@@ -49,8 +49,8 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"addAmount(uint256)": "0912f232",
-			"getUserBal()": "17cc5e1e",
+			"addAmount(uint256,address)": "3ae14aa3",
+			"getUserBal(address)": "131acb9a",
 			"getVatValue()": "1124a993"
 		}
 	},
@@ -61,6 +61,11 @@
 					"internalType": "uint256",
 					"name": "_num",
 					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_addr",
+					"type": "address"
 				}
 			],
 			"name": "addAmount",
@@ -75,7 +80,13 @@
 			"type": "function"
 		},
 		{
-			"inputs": [],
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_addr",
+					"type": "address"
+				}
+			],
 			"name": "getUserBal",
 			"outputs": [
 				{
